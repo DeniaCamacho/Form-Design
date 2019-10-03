@@ -1,0 +1,64 @@
+
+html{box-sizing: border-box;}
+*,*::before, *::after{box-sizing: inherit;}
+
+
+body{
+    background-color: #5098cf;
+    color:white; }
+
+form{display: flex;
+justify-content: space-between;}
+
+
+div{display: block;
+width: 500px;
+padding: 30px;}
+
+input,select,textarea{
+    background: transparent;
+    border: 2px solid white;
+    width:400px; 
+    color:white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-bottom: 30px; 
+    animation-name: transition;
+    animation-duration: 5s;      
+}
+
+select{
+    color:white;
+    width: 400px;
+    font-size: 18px;
+    padding: 30px;
+}
+
+
+input
+    { padding:20px;}
+
+input:hover, select:hover,textarea:hover{
+    border-color: #265f8d;
+
+}
+input:focus, select:focus,text:focus{
+outline:0;
+border:2px solid #265f8d;}
+
+label{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+border:white,solid,30px 30px;
+}
+
+::placeholder{
+    color: #265f8d;
+    font-style: italic;
+    font-size: 18px;
+}
+
+@keyframes transition {
+    from {background-color:transparent;}
+    to {background-color: yellowgreen;}
+  }
